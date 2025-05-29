@@ -7,8 +7,3 @@
         src: "/var/snap/jenkins/4862/workspace/JenkinsAnsible/target/MavenAnsibleWebApp.war"
         dest: "/home/Thushar/tomcatNew/webapps/"
         remote_src: no
-
-    - name: Restart Tomcat
-      systemd:
-        name: tomcat
-        state: restarted
